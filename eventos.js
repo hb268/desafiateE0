@@ -8,8 +8,22 @@ document.body.appendChild(container);
 container.style.padding = "5px"; 
 container.style.backgroundColor = "green";
 
+function holisBtn(event) {
+    alert("Hola!");
+    event.stopImmediatePropagation();
+}
 
-container.addEventListener("click", () => {
-   alert("Hola! Soy el div")
-});
-  
+btn1.addEventListener("click", holisBtn);
+
+
+
+
+
+function holis() {
+     alert("Hola! Soy el div");
+ }
+
+
+
+
+container.addEventListener("click", holis);
